@@ -1,0 +1,46 @@
+.table {
+  width: 100%;
+  align-self: flex-start;
+  border-collapse: collapse;
+  border: 2px dashed $color_interface-accent;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__head {
+    border: 2px dashed $color_interface-accent;
+    background-color: $color_interface_modal_edge;
+  }
+
+  &__row {
+    border: 2px dashed $color_interface-accent;
+  }
+
+  &__heading {
+    padding: 10px 20px;
+    font: $font_display_s;
+    color: $color_text_primary_light_text;
+    border: 2px dashed $color_interface-accent;
+    transition: $base_transition;
+    cursor: pointer;
+
+    &_active {
+      background-color: $color_text_dark_grey_text;
+      box-shadow: $box_shadow_button;
+    }
+
+    &_active::after {
+      content: ' ⬆';
+      font-weight: 200
+    }
+
+    &_reverse {
+      background-color: $color_text_dark_grey_text;
+      box-shadow: $box_shadow_button;
+    }
+
+    &_reverse::after {
+      content: ' ⬇';
+      font-weight: 200
+    }
+  }
+}

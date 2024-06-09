@@ -1,0 +1,104 @@
+.button {
+  padding: 0;
+  margin: 0;
+  font: $font_text;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: $base_transition;
+
+  &_clear {
+    outline: none;
+    width: max-content;
+  }
+
+  &_primary {
+    @include flex-align-center;
+
+    padding: 16px 40px;
+    box-sizing: border-box;
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    background: $gradient_button;
+    background-blend-mode: overlay;
+    box-shadow: $box_shadow_button;
+    border-radius: 64px;
+  }
+
+  &_secondary {
+    @include flex-align-center;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    background: $color_interface_bg;
+    border-radius: 15px;
+  }
+
+  &_disabled {
+    @include flex-align-center;
+
+    padding: 16px 40px;
+    box-sizing: border-box;
+    font: $font_text;
+    color: $color_text_dark_grey_text;
+    background: $color_text-disabled;
+    border-radius: 64px;
+  }
+
+  &_delete {
+    @include flex-align-center;
+
+    padding: 16px 40px;
+    box-sizing: border-box;
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    background: $color_interface_error;
+    border-radius: 64px;
+  }
+
+  &_pending {
+    @include flex-align-center;
+
+    padding: 16px 40px;
+    box-sizing: border-box;
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    background: $color_interface_modal_edge;
+    border-radius: 64px;
+  }
+
+  &_success {
+    @include flex-align-center;
+
+    padding: 16px 40px;
+    box-sizing: border-box;
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    background: $color_interface_success;
+    border-radius: 64px;
+  }
+
+  &_primary:hover {
+    background: $gradient_button_hover;
+  }
+
+  &_secondary:hover {
+    background: $color_text_dark_grey_text;
+  }
+}
+
+.button_clear:hover {
+  opacity: $base_opacity;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  background: $color_text_disabled;
+}

@@ -1,0 +1,39 @@
+.page {
+  @include flex-align-center;
+  @include page-container;
+
+  padding: 60px 0;
+  gap: 60px;
+
+  &__loader {
+    margin: 70px 0;
+  }
+
+  &__validation {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_text;
+    color: $color_interface_error;
+  }
+
+  &__error {
+    @include clear-paragraph;
+
+    margin: 30px 0 0;
+    font: $font_text;
+    color: $color_interface_error;
+  }
+
+  &__success {
+    @include clear-paragraph;
+
+    margin: 30px 0 0;
+    font: $font_text;
+    color: $color_interface_success;
+  }
+
+  &__additional {
+    margin-top: 80px;
+  }
+}

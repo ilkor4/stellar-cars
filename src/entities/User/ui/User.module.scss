@@ -1,0 +1,27 @@
+.user {
+  @include flex-align-center;
+
+  max-width: $max_width_content;
+  margin-top: $margin_top_base;
+  gap: 20px;
+
+  &__container {
+    padding: 18px 24px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $color_interface_input;
+    border: 2px dashed $color_interface-accent;
+    border-radius: 40px;
+  }
+
+  &__text {
+    @include clear-paragraph;
+
+    font: $font_display_s;
+    color: $color_text_primary_light_text;
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+}

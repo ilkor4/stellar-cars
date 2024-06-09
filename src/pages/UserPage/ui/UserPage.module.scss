@@ -1,0 +1,4 @@
+.page {
+  @include flex-align-center;
+  @include page-container;
+}

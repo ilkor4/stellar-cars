@@ -1,0 +1,54 @@
+.additional {
+  @include clear-paragraph;
+
+  text-align: center;
+  font: $font_text;
+  color: $color_text_dark_grey_text;
+
+  &__link {
+    @include clear-paragraph;
+
+    margin-left: 10px;
+  }
+}
+
+.page {
+  @include flex-align-center;
+  @include page-container;
+
+  &__form {
+    margin-top: $margin_top_base;
+  }
+
+  &__loader {
+    margin: 70px 0;
+  }
+
+  &__validation {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_text;
+    color: $color_interface_error;
+  }
+
+  &__error {
+    @include clear-paragraph;
+
+    margin: 30px 0 0;
+    font: $font_text;
+    color: $color_interface_error;
+  }
+
+  &__success {
+    @include clear-paragraph;
+
+    margin: 30px 0 0;
+    font: $font_text;
+    color: $color_interface_success;
+  }
+
+  &__additional {
+    margin-top: 80px;
+  }
+}

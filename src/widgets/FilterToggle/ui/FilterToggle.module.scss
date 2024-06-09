@@ -1,0 +1,26 @@
+.list {
+  @include clear-list();
+  @include flex-justify-center;
+
+  width: 100%;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+  }
+
+  &__button {
+    &_active {
+      background: $color_interface_modal_edge;
+      box-shadow: $box_shadow_button;
+      cursor: none;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint_tablet) {
+  .list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

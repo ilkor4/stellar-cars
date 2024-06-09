@@ -1,0 +1,7 @@
+.navbar {
+  @include flex-justify-center;
+
+  width: 100%;
+  background-color: $color_interface_modal_bg;
+  box-shadow: $base_box_shadow;
+}

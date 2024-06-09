@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "overrides": [
+    ],
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": [2, 4, { "SwitchCase": 1 }],
+        "@typescript-eslint/indent": [2, 4, { "SwitchCase": 1 }],
+        "max-len": ["error", {"code": 120, "ignoreComments": true}],
+        "react/react-in-jsx-scope": "off",
+        "media-query-no-invalid": "off",
+        "@typescript-eslint/no-misused-promises": [2, {
+            "checksVoidReturn": {
+                "attributes": false
+            },
+            "checksConditionals": false
+        }],
+        "@typescript-eslint/consistent-type-imports": [2, {
+            "prefer": "no-type-imports"
+        }]
+    }
+}

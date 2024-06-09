@@ -1,0 +1,54 @@
+.page {
+  @include page-container;
+  @include flex-align-center;
+
+  width: 100%;
+  gap: 40px;
+
+  &__title {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_display_l;
+    font-weight: 700;
+    color: $color_text_primary_light_text;
+  }
+
+  &__list {
+    @include clear-list;
+    @include flex-align-center;
+
+    width: 100%;
+    gap: 40px;
+  }
+
+  &__container {
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $max_width_info;
+    background-color: $color_interface_input;
+    border: 2px dashed $color_interface-accent;
+    border-radius: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__text {
+    @include clear-paragraph;
+    @include flex-align-center;
+
+    text-align: center;
+    gap: 10px;
+    font: $font_display_s;
+    font-weight: 700;
+    color: $color_text_primary_light_text;
+  }
+
+  &__value {
+    text-align: center;
+    font: $font_display_s;
+    color: $color_text_primary_light_text;
+    font-weight: 100;
+  }
+}

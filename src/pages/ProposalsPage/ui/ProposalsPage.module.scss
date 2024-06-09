@@ -1,0 +1,38 @@
+.page {
+  @include flex-align-center;
+  @include page-container;
+
+  gap: 30px;
+  overflow-x: scroll;
+
+  &__edit {
+    margin-right: 10px;
+    fill: $color_text_primary_light_text;
+  }
+
+  &__title {
+    @include clear-paragraph;
+
+    margin-top: 20px;
+    align-self: flex-start;
+    font: $font_display_s;
+    color: $color_text_primary_light_text;
+  }
+
+  &__message {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_display_l;
+    color: $color_text_primary_light_text;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_text;
+    color: $color_interface_error;
+  }
+}

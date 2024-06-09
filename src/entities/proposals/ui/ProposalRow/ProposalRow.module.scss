@@ -1,0 +1,19 @@
+.row {
+  background-color: $color_text_dark_grey_text;
+
+  &__data {
+    padding: 10px 20px;
+    text-align: center;
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    border: 2px dashed $color_interface-accent;
+  }
+
+  &__delete {
+    fill: $color_text_primary_light_text;
+  }
+
+  &__edit {
+    fill: $color_text_primary_light_text;
+  }
+}

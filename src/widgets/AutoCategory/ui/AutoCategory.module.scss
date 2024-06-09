@@ -1,0 +1,42 @@
+.category {
+  @include flex-align-center;
+
+  width: 100%;
+  gap: 60px;
+
+  &__title {
+  @include clear-paragraph;
+
+    text-align: center;
+    font: $font_display_l;
+    color: $color_text_primary_light_text;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    @include clear-list;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    place-items: center;
+  }
+
+}
+
+@media screen and (max-width: $breakpoint_tablet){
+  .category {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint_mobile){
+  .category {
+    &__list {
+      @include flex-align-center;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@mixin flex-align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  place-items: center;
+}
+
+@mixin page-container {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $max_width_container;
+  position: relative;
+}
+
+@mixin clear-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin clear-link {
+  text-decoration: none;
+}
+
+@mixin clear-button {
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin clear-paragraph {
+  margin: 0;
+}
+
+@mixin clear-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin clear-input {
+  padding: 0;
+  border: none;
+  outline: none;
+}

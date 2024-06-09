@@ -1,0 +1,38 @@
+@import "utils/normalize";
+@import "fonts/fonts";
+@import "variables/global";
+@import "theme/light";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  @include flex-align-center;
+
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100dvh;
+  color: $color_text-primary_light_text;
+  background-color: $color_interface_bg;
+}
+
+.app__error {
+  @include clear-paragraph;
+
+  margin: 50px 0;
+  text-align: center;
+  font: $font_display_l;
+  color: $color_interface_error;
+}
+
+.app__not-found {
+  @include clear-paragraph;
+
+  margin: 50px 0;
+  text-align: center;
+  font: $font_display_l;
+  color: $color_text_primary_light_text;
+}

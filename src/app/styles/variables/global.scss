@@ -1,0 +1,77 @@
+/* Глобальные динамические переменные цветов: */
+:root {
+  --interface-modal-bg: #1c1c21;
+  --color-interface-input: #2f2f37;
+  --color-interface-bg: #131316;
+  --color-text-primary-light-text: #f2f2f3;
+  --color-text_dark-grey-text: #8585ad;
+  --color-text-disabled: #3a3a55;
+}
+
+/* Глобальные переменные шрифтов: */
+$font_family: "JetBrains", arial, sans-serif;
+
+$font_text: 400 16px/24px $font_family;
+$font_display_s: 700 24px/30px $font_family;
+$font_display_l: 36px/40px $font_family;
+$font_digits_s: 28px/24px $font_family;
+$font_digits_m: 48px/36px $font_family;
+$font_digits_l: 144px/120px $font_family;
+
+/* Глобальные основные цвета: */
+/*  Динамические цвета: */
+$color_interface_modal_bg: var(--interface-modal-bg);
+$color_interface_input: var(--color-interface-input);
+$color_interface_bg: var(--color-interface-bg);
+$color_text_primary_light_text: var(--color-text-primary-light-text);
+$color_text_dark_grey_text: var(--color-text_dark-grey-text);
+$color_neon: #b5ff3d;
+
+/* Статические цвета: */
+$color_interface_accent: #4c4cff;
+$color_interface_active: #4c4cff;
+$color_interface_success: #0cc;
+$color_interface_error: #e52b1a;
+$color_interface_modal_edge: rgb(76 76 255 / 20%);
+$color_text_disabled: #3a3a55;
+
+/* Размеры: */
+
+/* Максимальная ширина элементов: */
+$max_width_container: 1280px;
+$max_width_form_container: 480px;
+$max_width_content: 340px;
+$max_width_info: 700px;
+
+/* Ширина элементов: */
+$width_content: 300px;
+
+/* Высота элементов: */
+$height_social: 36px;
+
+/* Анимации и транзиции: */
+$base_transition: all .6s ease;
+
+/* Прозрачность: */
+$base_opacity: .6;
+
+/* Тени: */
+$base_box_shadow: 0 0 1px 0 rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 4%), 0 16px 24px 0 rgb(0 0 0 / 4%), 0 24px 32px 0 rgb(0 0 0 / 4%);
+$box_shadow_button: 0 4px 32px 0 rgb(51 51 255 / 50%), 0 0 8px 8px rgb(51 51 255 / 25%), 0 0 16px 8px rgb(51 51 255 / 25%);
+
+/* Z-индексы: */
+$z_contacts_container: 1;
+
+/* Брейкпоинты: */
+$breakpoint_desktop_wide: 1440px;
+$breakpoint_desktop: 1200px;
+$breakpoint_tablet: 992px;
+$breakpoint_mobile: 576px;
+
+/* Отступы: */
+$base_padding: 5%;
+$margin_top_base: 180px;
+
+/* Градиенты */
+$gradient_button: linear-gradient(45deg, #801ab2 0%, #4c4cff 100%);
+$gradient_button_hover: linear-gradient(45deg, #801ab2 0%, #4c4cff 100%), rgb(0 0 0  / 40%);

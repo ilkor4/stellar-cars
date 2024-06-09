@@ -1,0 +1,26 @@
+.form {
+  @include flex-align-center;
+
+  width: 100%;
+  max-width: $max_width_form_container;
+  gap: 24px;
+
+
+  &__legend {
+    @include clear-fieldset;
+
+    width: 100%;
+    display: inline;
+    font: $font_display_s;
+    text-align: center;
+    color: $color_text_primary_light_text;
+  }
+
+  &__fieldset {
+    @include clear-fieldset;
+    @include flex-align-center;
+
+    width: 100%;
+    gap: 24px;
+  }
+}

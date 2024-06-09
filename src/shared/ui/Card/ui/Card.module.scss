@@ -1,0 +1,67 @@
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.card {
+  @include flex-align-center;
+
+  width: 100%;
+  max-width: $max_width_content;
+  box-sizing: border-box;
+  border-radius: 40px;
+  border: 2px solid $color_interface_bg;
+  overflow: hidden;
+  transition: $base_transition;
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1 /1;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__description {
+    @include flex-align-center;
+
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+    background-color: $color_interface_modal_bg;
+  }
+
+  &__title {
+   @include  clear-paragraph;
+
+    font: $font_text;
+    color: $color_text_primary_light_text;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+   @include  clear-paragraph;
+
+    font: $font_text;
+    color: $color_text_dark_grey_text;
+    font-weight: 100;
+  }
+
+  &__button {
+    margin-top: 10px;
+  }
+
+  &__wheel {
+    margin-left: 7px;
+    fill: $color_text_primary_light_text;
+    animation: rotate 4s linear infinite;
+  }
+}
+
+.card:hover {
+  box-shadow: $box_shadow_button;
+  border: 2px solid $color_interface-accent;
+}

@@ -1,0 +1,31 @@
+.tooltip {
+  @include flex-align-center;
+
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $max_width_info;
+  font: $font_text;
+  color: $color_text_primary_light_text;
+  border-radius: 40px;
+
+  &_rejected {
+    background-color: $color_interface_error;
+  }
+
+  &_success {
+    background-color: $color_interface_success;
+  }
+
+  &_pending {
+    background-color: $color_interface_modal_edge;
+  }
+
+  &__message {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_display_s;
+    color: $color_text_primary_light_text;
+  }
+}

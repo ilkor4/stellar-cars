@@ -1,0 +1,16 @@
+.page {
+  @include flex-align-center;
+  @include page-container;
+
+  padding: 60px 0;
+  gap: 60px;
+
+  &__message {
+    @include clear-paragraph;
+
+    text-align: center;
+    font: $font_display_l;
+    color: $color_text_primary_light_text;
+    text-transform: uppercase;
+  }
+}

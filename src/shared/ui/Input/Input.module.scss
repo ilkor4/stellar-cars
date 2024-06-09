@@ -1,0 +1,35 @@
+.label {
+  @include flex-align-center;
+
+  width: 100%;
+  gap: 15px;
+  font: $font-text;
+  align-items: flex-start;
+  color: $color_text_dark_grey_text;
+
+  &__input {
+    @include clear-input;
+
+    padding: 18px 24px;
+    box-sizing: border-box;
+    width: 100%;
+    font: $font-text;
+    color: $color_text_primary_light_text;
+    background-color: $color_interface_input;
+    border: 2px dashed $color_interface-accent;
+    border-radius: 40px;
+  }
+
+  &__input::placeholder {
+    font: $font-text;
+    color: $color_text_dark_grey_text;
+  }
+
+  &__input:focus {
+    border: 2px solid $color_interface-success;
+  }
+
+  &__input_invalid {
+    border: 2px solid $color_interface_error;
+  }
+}
